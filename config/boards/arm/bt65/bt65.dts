@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-	model = "BT60";
-	compatible = "bt60";
+	model = "BT65";
+	compatible = "bt65";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
