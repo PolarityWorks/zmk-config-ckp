@@ -1,5 +1,5 @@
-identifier: bt60
-name: bt60
+identifier: bt75
+name: bt75
 type: mcu
 arch: arm
 toolchain:
