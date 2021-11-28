@@ -10,7 +10,7 @@
 
 / {
 	model = "BT75";
-	compatible = "bt75";
+	compatible = "polarityworks,bt75";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
@@ -109,8 +109,8 @@ backlight: pwmleds {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
 		io-channels = <&adc 2>;
-		output-ohms = <2000000>;
-		full-ohms = <(2000000 + 806000)>;
+		output-ohms = <100000>;
+		full-ohms = <(100000 + 100000)>;
 	};
 };
 
