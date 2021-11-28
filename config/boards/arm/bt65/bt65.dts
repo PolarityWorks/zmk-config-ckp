@@ -10,7 +10,7 @@
 
 / {
 	model = "BT65";
-	compatible = "bt65";
+	compatible = "polarityworks,bt65";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
@@ -23,8 +23,8 @@
 	};
 
 	sensors {
-				compatible = "zmk,keymap-sensors";
-				sensors = <&left_encoder>;
+		compatible = "zmk,keymap-sensors";
+		sensors = <&left_encoder>;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -107,8 +107,8 @@ backlight: pwmleds {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
 		io-channels = <&adc 2>;
-		output-ohms = <2000000>;
-		full-ohms = <(2000000 + 806000)>;
+		output-ohms = <100000>;
+		full-ohms = <(100000 + 100000)>;
 	};
 };
 
