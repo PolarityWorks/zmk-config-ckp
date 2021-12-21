@@ -60,12 +60,12 @@
         { "label": "RShift", "row": 3, "col": 11, "x": 12.25, "y": 3, "w":2.75 },
 
         { "label": "LCtrl", "row": 4, "col": 1, "x": 0, "y": 4, "w":1.5 },
-        { "label": "GUI", "row": 4, "col": 2, "x": 1.5, "y": 4, "w":1.5 },
-        { "label": "LAlt", "row": 4, "col": 3, "x": 3, "y": 4, "w":1.5 },
-        { "label": "Space", "row": 4, "col": 4, "x": 4.5, "y": 4, "w":7 },
-        { "label": "RAlt", "row": 4, "col": 5, "x": 11.5, "y": 4, "w":1.5 },
-        { "label": "Fn", "row": 4, "col": 6, "x": 13, "y": 4, "w":1.5 },
-        { "label": "RCtrl", "row": 4, "col": 8, "x": 14.5, "y": 4, "w":1.5 }
+        { "label": "GUI", "row": 4, "col": 2, "x": 1.5, "y": 4},
+        { "label": "LAlt", "row": 4, "col": 3, "x": 2.5, "y": 4, "w":1.5 },
+        { "label": "Space", "row": 4, "col": 4, "x": 4, "y": 4, "w":7 },
+        { "label": "RAlt", "row": 4, "col": 5, "x": 11, "y": 4, "w":1.5 },
+        { "label": "Fn", "row": 4, "col": 6, "x": 12.5, "y": 4},
+        { "label": "RCtrl", "row": 4, "col": 8, "x": 13.5, "y": 4, "w":1.5 }
       ]
     }
   }
