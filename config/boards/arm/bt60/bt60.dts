@@ -23,8 +23,8 @@
 	};
 
 	sensors {
-				compatible = "zmk,keymap-sensors";
-				sensors = <&encoder_1>;
+		compatible = "zmk,keymap-sensors";
+		sensors = <&encoder_1>;
 	};
 
 	default_transform: keymap_transform_0 {
