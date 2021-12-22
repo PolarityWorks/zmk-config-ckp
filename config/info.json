@@ -33,7 +33,7 @@
         { "label": "[", "row": 1, "col": 11, "x": 11.5, "y": 1 },
         { "label": "]", "row": 1, "col": 12, "x": 12.5, "y": 1 },
         { "label": "\\", "row": 1, "col": 13, "x": 13.5, "y": 1, "w": 1.5 },
-        { "label": "Mod2", "row": 1, "col": 14, "x": 15.5, "y": 1,
+        { "label": "Mod2", "row": 1, "col": 14, "x": 15.5, "y": 1},
 
         { "label": "Caps", "row": 2, "col": 0, "x": 0, "y": 2, "w":1.75 },
         { "label": "A", "row": 2, "col": 1, "x": 1.75, "y": 2 },
@@ -76,7 +76,7 @@
         { "label": "RCtrl", "row": 4, "col": 7, "x": 12, "y": 4},
         { "label": "Left", "row": 4, "col": 8, "x": 13, "y": 4},
         { "label": "Down", "row": 4, "col": 9, "x": 14, "y": 4 },
-        { "label": "Right", "row": 4, "col": 10, "x": 15, "y": 4 },
+        { "label": "Right", "row": 4, "col": 10, "x": 15, "y": 4 }
       ]
     }
   }
