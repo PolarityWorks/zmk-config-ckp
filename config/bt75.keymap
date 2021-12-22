@@ -11,12 +11,12 @@
 		compatible = "zmk,keymap";
 		default_layer {
 				// ------------------------------------------------------------------------------------------------------------
-				// | ESC | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F9  | F9  | F10 | F11 | F12 | DEL | RGB tog | RGB HUI		|
-				// |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   | BACKlight tog		|
-				// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   |    | backlight up			|
-				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    | backlight down	|
-				// |  SHIFT    |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |      SHIFT     | bootloader			|
-				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU    |  CTRL    | reset				|
+				// | ESC | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F9  | F9  | F10 | F11 | F12 | PSCRN | INS | DEL	|
+				// |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   | HOME	|
+				// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |    \    | PG UP |
+				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER     | PG DN |
+				// |  SHIFT    |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |    SHIFT |  UP  |  END  |
+				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1  | CTRL |  LEFT | DOWN | RIGHT |
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9 &kp  F10  &kp F11 &kp F12   &kp PSCRN &kp INS &kp DEL
@@ -34,8 +34,8 @@
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
 				&trans &trans &kp UP &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK &reset &rgb_ug RGB_HUI
 				&trans    &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_UP   &bootloader &rgb_ug RGB_HUD
-				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &rgb_ug RGB_SAI
-				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &ext_power EP_TOG &rgb_ug RGB_SAD
+				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
+				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans  &bt BT_CLR &trans &trans &bl BL_DEC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
