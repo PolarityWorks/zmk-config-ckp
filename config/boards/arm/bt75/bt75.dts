@@ -24,7 +24,7 @@
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
-		sensors = <&left_encoder>;
+		sensors = <&encoder_1>;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -75,7 +75,7 @@
 			, <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
-	
+
 	ext-power {
 			compatible = "zmk,ext-power-generic";
 			label = "EXT_POWER";
