@@ -23,8 +23,8 @@
 	};
 
 	sensors {
-				compatible = "zmk,keymap-sensors";
-				sensors = <&encoder_1>;
+		compatible = "zmk,keymap-sensors";
+		sensors = <&encoder_1>;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -74,41 +74,41 @@
 			;
 	};
 	ext-power {
-			compatible = "zmk,ext-power-generic";
-			label = "EXT_POWER";
-			control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-		};
+		compatible = "zmk,ext-power-generic";
+		label = "EXT_POWER";
+		control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+	};
 	encoder_1: encoder_1 {
-			compatible = "alps,ec11";
-			label = "ENCODER_ONE";
-			a-gpios = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-			b-gpios = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-			resolution = <4>;
-			status = "okay";
-		};
+		compatible = "alps,ec11";
+		label = "ENCODER_ONE";
+		a-gpios = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <4>;
+		status = "okay";
+	};
 	encoder_2: encoder_2 {
-			compatible = "alps,ec11";
-			label = "ENCODER_TWO";
-			a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-			b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-			resolution = <4>;
-			status = "okay";
-		};
+		compatible = "alps,ec11";
+		label = "ENCODER_TWO";
+		a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <4>;
+		status = "okay";
+	};
 	encoder_3: encoder_3 {
-			compatible = "alps,ec11";
-			label = "encoder_3";
-			a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-			b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-			resolution = <4>;
-			status = "okay";
-		};
+		compatible = "alps,ec11";
+		label = "encoder_3";
+		a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <4>;
+		status = "okay";
+	};
 	backlight: pwmleds {
-			compatible = "pwm-leds";
-			label = "Backlight LEDs";
-			pwm_led_0 {
-				pwms = <&pwm0 17>;
-				label = "Backlight LED 0";
-			};
+		compatible = "pwm-leds";
+		label = "Backlight LEDs";
+		pwm_led_0 {
+			pwms = <&pwm0 17>;
+			label = "Backlight LED 0";
+		};
 	};
 
 	leds {
