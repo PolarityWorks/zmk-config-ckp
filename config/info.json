@@ -16,7 +16,7 @@
         { "label": "-", "row": 0, "col": 11, "x": 11, "y": 0 },
         { "label": "=", "row": 0, "col": 12, "x": 12, "y": 0 },
         { "label": "Bksp", "row": 0, "col": 13, "x": 13, "y": 0, "w":2},
-        { "label": "Mod1", "row": 0, "col": 14, "x": 14, "y": 0},
+        { "label": "Mod1", "row": 0, "col": 14, "x": 15, "y": 0},
 
         { "label": "Tab", "row": 1, "col": 0, "x": 0, "y": 1, "w": 1.5 },
         { "label": "W", "row": 1, "col": 1, "x": 2.5, "y": 1 },
