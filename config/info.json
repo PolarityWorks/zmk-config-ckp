@@ -15,9 +15,9 @@
         { "label": "F10", "row": 0, "col": 10, "x": 10, "y": 0 },
         { "label": "F11", "row": 0, "col": 11, "x": 11, "y": 0 },
         { "label": "F12", "row": 0, "col": 12, "x": 12, "y": 0 },
-        { "label": "PSCRN", "row": 0, "col": 13, "x": 13, "y": 0},
-        { "label": "INS", "row": 0, "col": 14, "x": 14, "y": 0},
-        { "label": "Mod0", "row": 0, "col": 15, "x": 15, "y": 0},
+        { "label": "PSCRN", "row": 0, "col": 13, "x": 13, "y": 0 },
+        { "label": "INS", "row": 0, "col": 14, "x": 14, "y": 0 },
+        { "label": "Mod0", "row": 0, "col": 15, "x": 15, "y": 0 },
 
         { "label": "`", "row": 1, "col": 0, "x": 0, "y": 1 },
         { "label": "1", "row": 1, "col": 1, "x": 1, "y": 1 },
@@ -32,7 +32,7 @@
         { "label": "0", "row": 1, "col": 10, "x": 10, "y": 1 },
         { "label": "-", "row": 1, "col": 11, "x": 11, "y": 1 },
         { "label": "=", "row": 1, "col": 12, "x": 12, "y": 1 },
-        { "label": "Bksp", "row": 1, "col": 13, "x": 13, "y": 1, "w":2},
+        { "label": "Bksp", "row": 1, "col": 13, "x": 13, "y": 1, "w": 2 },
         { "label": "Mod1", "row": 1, "col": 14, "x": 15, "y": 1},
 
         { "label": "Tab", "row": 2, "col": 0, "x": 0, "y": 2, "w": 1.5 },
