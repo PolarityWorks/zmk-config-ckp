@@ -20,10 +20,10 @@
         { "label": "Mod1", "row": 0, "col": 15, "x": 15, "y": 0},
 
         { "label": "Tab", "row": 1, "col": 0, "x": 0, "y": 1, "w": 1.5 },
+        { "label": "Q", "row": 1, "col": 1, "x": 1.5, "y": 1 },
         { "label": "W", "row": 1, "col": 2, "x": 2.5, "y": 1 },
         { "label": "E", "row": 1, "col": 3, "x": 3.5, "y": 1 },
         { "label": "R", "row": 1, "col": 4, "x": 4.5, "y": 1 },
-        { "label": "Q", "row": 1, "col": 1, "x": 1.5, "y": 1 },
         { "label": "T", "row": 1, "col": 5, "x": 5.5, "y": 1 },
         { "label": "Y", "row": 1, "col": 6, "x": 6.5, "y": 1 },
         { "label": "U", "row": 1, "col": 7, "x": 7.5, "y": 1 },
@@ -33,7 +33,7 @@
         { "label": "[", "row": 1, "col": 11, "x": 11.5, "y": 1 },
         { "label": "]", "row": 1, "col": 12, "x": 12.5, "y": 1 },
         { "label": "\\", "row": 1, "col": 13, "x": 13.5, "y": 1, "w": 1.5 },
-        { "label": "Mod2", "row": 1, "col": 14, "x": 15.5, "y": 1},
+        { "label": "Mod2", "row": 1, "col": 14, "x": 15, "y": 1},
 
         { "label": "Caps", "row": 2, "col": 0, "x": 0, "y": 2, "w":1.75 },
         { "label": "A", "row": 2, "col": 1, "x": 1.75, "y": 2 },
