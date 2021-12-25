@@ -19,10 +19,10 @@
         { "label": "Mod1", "row": 0, "col": 15, "x": 14, "y": 0},
 
         { "label": "Tab", "row": 1, "col": 0, "x": 0, "y": 1, "w": 1.5 },
-        { "label": "W", "row": 1, "col": 2, "x": 2.5, "y": 1 },
-        { "label": "E", "row": 1, "col": 3, "x": 3.5, "y": 1 },
-        { "label": "R", "row": 1, "col": 4, "x": 4.5, "y": 1 },
-        { "label": "Q", "row": 1, "col": 1, "x": 1.5, "y": 1 },
+        { "label": "W", "row": 1, "col": 1, "x": 2.5, "y": 1 },
+        { "label": "E", "row": 1, "col": 2, "x": 3.5, "y": 1 },
+        { "label": "R", "row": 1, "col": 3, "x": 4.5, "y": 1 },
+        { "label": "Q", "row": 1, "col": 4, "x": 1.5, "y": 1 },
         { "label": "T", "row": 1, "col": 5, "x": 5.5, "y": 1 },
         { "label": "Y", "row": 1, "col": 6, "x": 6.5, "y": 1 },
         { "label": "U", "row": 1, "col": 7, "x": 7.5, "y": 1 },
@@ -50,18 +50,18 @@
         { "label": "Mod3", "row": 2, "col": 13, "x": 15, "y": 2},
 
         { "label": "LShift", "row": 3, "col": 0, "x": 0, "y": 3, "w":2.25},
-        { "label": "Z", "row": 3, "col": 2.25, "x": 1, "y": 3 },
-        { "label": "X", "row": 3, "col": 3.25, "x": 2, "y": 3 },
-        { "label": "C", "row": 3, "col": 4.25, "x": 3, "y": 3 },
-        { "label": "V", "row": 3, "col": 5.25, "x": 4, "y": 3 },
-        { "label": "B", "row": 3, "col": 6.25, "x": 5, "y": 3 },
-        { "label": "N", "row": 3, "col": 7.25, "x": 6, "y": 3 },
-        { "label": "M", "row": 3, "col": 8.25, "x": 7, "y": 3 },
-        { "label": ",", "row": 3, "col": 9.25, "x": 8, "y": 3 },
-        { "label": ".", "row": 3, "col": 10.25, "x": 9, "y": 3 },
-        { "label": "/", "row": 3, "col": 11.25, "x": 10, "y": 3 },
-        { "label": "RShift", "row": 3, "col": 12.25, "x": 11, "y": 3, "w":2.75},
-        { "label": "Mod4", "row": 3, "col": 15, "x": 13, "y": 3},
+        { "label": "Z", "row": 3, "col": 1, "x": 2.25, "y": 3 },
+        { "label": "X", "row": 3, "col": 2, "x": 3.25, "y": 3 },
+        { "label": "C", "row": 3, "col": 3, "x": 4.25, "y": 3 },
+        { "label": "V", "row": 3, "col": 4, "x": 5.25, "y": 3 },
+        { "label": "B", "row": 3, "col": 5, "x": 6.25, "y": 3 },
+        { "label": "N", "row": 3, "col": 6, "x": 7.25, "y": 3 },
+        { "label": "M", "row": 3, "col": 7, "x": 8.25, "y": 3 },
+        { "label": ",", "row": 3, "col": 8, "x": 9.25, "y": 3 },
+        { "label": ".", "row": 3, "col": 9, "x": 10.25, "y": 3 },
+        { "label": "/", "row": 3, "col": 10, "x": 11.25, "y": 3 },
+        { "label": "RShift", "row": 3, "col": 11, "x": 12.25, "y": 3, "w":2.75},
+        { "label": "Mod4", "row": 3, "col": 12, "x": 15, "y": 3},
 
         { "label": "LCtrl", "row": 4, "col": 1, "x": 0, "y": 4, "w":1.5 },
         { "label": "GUI", "row": 4, "col": 2, "x": 1.5, "y": 4},
@@ -70,7 +70,7 @@
         { "label": "RAlt", "row": 4, "col": 5, "x": 11, "y": 4, "w":1.5 },
         { "label": "Fn", "row": 4, "col": 6, "x": 12.5, "y": 4},
         { "label": "RCtrl", "row": 4, "col": 7, "x": 13.5, "y": 4, "w":1.5 },
-        { "label": "Right", "row": 4, "col": 10, "x": 15, "y": 4 }
+        { "label": "Right", "row": 4, "col": 8, "x": 15, "y": 4 }
       ]
     }
   }
