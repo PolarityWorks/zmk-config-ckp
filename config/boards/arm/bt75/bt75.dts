@@ -68,20 +68,18 @@
 
 		row-gpios
 			= <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,	<&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
-
 	ext-power {
 			compatible = "zmk,ext-power-generic";
 			label = "EXT_POWER";
 			control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
 		};
-
 	encoder_1: encoder_1 {
 		compatible = "alps,ec11";
 		label = "ENCODER_ONE";
@@ -106,7 +104,6 @@
 		resolution = <4>;
 		status = "okay";
 	};
-
 	backlight: pwmleds {
 		compatible = "pwm-leds";
 		label = "Backlight LEDs";
@@ -152,18 +149,6 @@
 
 &gpio1 {
 	status = "okay";
-};
-
-&i2c0 {
-	compatible = "nordic,nrf-twi";
-	sda-pin = <25>;
-	scl-pin = <20>;
-};
-
-&uart0 {
-	compatible = "nordic,nrf-uarte";
-	tx-pin = <6>;
-	rx-pin = <8>;
 };
 
 &usbd {
@@ -217,7 +202,7 @@
 	mosi-pin = <20>;
 	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
 	sck-pin = <27>;
-	miso-pin = <11>;
+	miso-pin = <8>;
 
 	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
