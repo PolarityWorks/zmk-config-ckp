@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: bortoz
-      url-base: https://github.com/bortoz
   projects:
     - name: zmk
-      remote: bortoz
-      revision: backlight
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
