@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:2.4
+      image: zmkfirmware/zmk-build-arm:stable
     name: Build
     steps:
       - name: Checkout
@@ -35,9 +35,6 @@ jobs:
         run: west zephyr-export
       - name: West Build (bt60)
         run: west build -s zmk/app -b bt60 -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: bt60 DTS File
-        if: ${{ always() }}
-        run: cat -n build/zephyr/bt60.dts.pre.tmp
       - name: bt60 Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
