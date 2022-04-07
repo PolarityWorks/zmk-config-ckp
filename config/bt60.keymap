@@ -40,7 +40,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans C_BKLT_TOG
 				&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp C_PLAY_PAUSE  &mo 0
-				&bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL3        &trans                   &kp C_VOL_DN  &kp C_VOL_UP &kp C_MUTE &reset
+				&bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3        &trans                   &kp C_VOL_DN  &kp C_VOL_UP &kp C_MUTE &reset
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
