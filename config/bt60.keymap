@@ -29,10 +29,10 @@
 		raise {
 			bindings = <
 				&reset &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &kp PSCRN
-				&trans &trans &kp C_VOL_UP &trans &trans &trans &trans &trans &kp INS &trans &trans &kp SLCK &kp PAUSE_BREAK
-				&kp C_MUTE &kp C_PREV &kp C_VOL_DN &kp C_NEXT &trans &trans &trans &trans &trans &trans &trans  &trans &trans  &bootloader
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp HOME
-				&bt BT_CLR &bt BT_PRV &bt BT_NXT               &trans                            &trans   &trans &trans    &rgb_ug RGB_TOG &bl BL_TOG
+				&trans &trans &trans &trans &trans &trans &trans &trans &kp INS &trans &trans &kp SLCK &kp PAUSE_BREAK
+				&kp C_MUTE &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans  &bootloader
+				&rgb_ug RGB_TOG &bl BL_TOG &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp C_VOL_UP &kp HOME
+				&bt BT_CLR &bt BT_PRV &bt BT_NXT               &trans                            &trans   &trans &kp C_PREV    &kp C_VOL_DN &kp C_NEXT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
