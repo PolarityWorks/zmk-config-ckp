@@ -30,7 +30,7 @@
 			bindings = <
 				&reset &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &kp PSCRN
 				&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &kp INS &trans &trans &kp SLCK &kp PAUSE_BREAK
-				&trans &out OUT_BLE  &out OUT_USB &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans  &bootloader
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans  &bootloader
 				&rgb_ug RGB_TOG &bl BL_TOG &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp C_VOL_UP &kp HOME
 				&bt BT_CLR &bt BT_PRV &bt BT_NXT               &trans                            &kp C_MUTE   &trans &kp C_PREV    &kp C_VOL_DN &kp C_NEXT
 			>;
