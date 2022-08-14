@@ -6,4 +6,4 @@ config BOARD_ENABLE_DCDC
 	default y
 	depends on BOARD_BT60
 
-CONFIG_ZMK_BACKLIGHT	= n
+CONFIG_ZMK_BACKLIGHT	= 0
