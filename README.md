@@ -24,3 +24,6 @@ After editing the keymap file upload it to the original folder using the "Add fi
  3. Under `Actions` in Github ensure build is successful
  4. Download new `bt60.keymap` file
  5. Put your keyboard into `Bootloader mode` and copy/paste/over-write existing keymap file
+
+ # Current Map
+ ![CurrentMap](currentMap.png)
