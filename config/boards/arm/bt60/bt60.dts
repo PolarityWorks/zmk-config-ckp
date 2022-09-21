@@ -22,6 +22,8 @@
 		zmk,underglow = &led_strip;
 		zmk,backlight = &backlight;
 		zmk,matrix_transform = &default_transform;
+		zmk,battery = &vbatt;
+		zephyr,console = &cdc_acm_uart;
 	};
 
 	sensors {
@@ -38,7 +40,7 @@
 			RC(2,0)   RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11) RC(2,12)   RC(2,13)
 			RC(3,0)     RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10) RC(3,11)          RC(3,13)
 			RC(4,0)       RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) RC(4,10)  RC(4,11)               RC(4,12)
-			RC(5,0)   RC(5,1)   RC(5,2)                      RC(5,6)                     RC(5,10)   RC(5,11)    RC(5,12)
+			RC(5,0)   RC(5,1)   RC(5,2)                      RC(5,6)                     RC(5,11)   RC(5,12)    RC(5,13)
 		>;
 	};
 
@@ -121,9 +123,9 @@
 		};
 	};
 
-	vbatt {
+	vbatt: vbatt {
 		compatible = "zmk,battery-voltage-divider";
-		label = "BATTERY";
+		label = "VBATT";
 		io-channels = <&adc 2>;
 		output-ohms = <100000>;
 		full-ohms = <(100000 + 100000)>;
@@ -165,6 +167,10 @@
 
 &usbd {
 	status = "okay";
+	cdc_acm_uart: cdc_acm_uart {
+    compatible = "zephyr,cdc-acm-uart";
+    label = "CDC_ACM_0";
+  };
 };
 
 
