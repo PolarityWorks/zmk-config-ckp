@@ -23,7 +23,6 @@
 		zmk,backlight = &backlight;
 		zmk,matrix_transform = &default_transform;
 		zmk,battery = &vbatt;
-		zephyr,console = &cdc_acm_uart;
 	};
 
 	sensors {
@@ -167,10 +166,6 @@
 
 &usbd {
 	status = "okay";
-	cdc_acm_uart: cdc_acm_uart {
-    compatible = "zephyr,cdc-acm-uart";
-    label = "CDC_ACM_0";
-  };
 };
 
 
