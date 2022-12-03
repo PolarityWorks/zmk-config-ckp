@@ -29,14 +29,14 @@
 		raise {
 				// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 				// |  BT_CLR    |   F1          |  F2        |   F3    |    F4     |   F5     |   F6   |   F7         |  F8    |  F9     |  F10    |  F11   |  F12           |       DEL      |
-				// |            |               |  EJECT     |   = (E) |           |   ~ (T)  |        |   _ (U)      |  INS   |         |  PIPE   |  SLCK  |  PAUSE_BREAK | |       RGB_TOG  |
+				// |            |               |  EJECT     |   = (E) |           |   ~ (T)  |   = (E)|   _ (U)      |  INS   |         |  PIPE   |  SLCK  |  PAUSE_BREAK | |       RGB_TOG  |
 				// | CAPS       |               |            |         |           |   ` (G)  |   LEFT |   DOWN       |  UP    |  RIGHT  |         |  PG_UP |                                 |
 				// |  C_PREV    |  PIPE         |  C_VOL_UP  |  MUTE   |    BL_INC |   BL_DEC |   N    |   - (M)      |  HOME  |  END    | PG_DN   |                                 BL_INC   |
 				// |  RGB_TOG   |  RGB_HUI      |  ALT       |            SPACE               | ALT | LVL 2  |  reset |                                                              BL_DEC   |
                                 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 			bindings = <
 				&bt BT_CLR      &kp F1          &kp F2       &kp F3     &kp F4     &kp F5     &kp F6   &kp F7         &kp F8   &kp F9    &kp F10   &kp F11   &kp F12         &kp DEL
-				&trans          &trans          &kp C_EJECT  &kp EQUAL  &trans     &kp TILDE  &trans   &kp UNDERSCORE &kp INS  &trans    &kp PIPE  &kp SLCK  &kp PAUSE_BREAK &rgb_ug RGB_TOG
+				&trans          &trans          &kp C_EJECT  &kp EQUAL  &trans     &kp TILDE  &kp EQUAL &kp UNDERSCORE &kp INS  &trans    &kp PIPE  &kp SLCK  &kp PAUSE_BREAK &rgb_ug RGB_TOG
 				&kp CAPS        &trans          &trans       &trans     &trans     &kp GRAVE  &kp LEFT &kp DOWN       &kp UP   &kp RIGHT &trans    &kp PG_UP                 &trans
 				&kp C_PREV      &kp PIPE        &kp C_VOL_UP &kp C_MUTE &bl BL_INC &bl BL_DEC &trans   &kp MINUS      &kp HOME &kp END   &kp PG_DN                           &bl BL_INC
 				&rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_HUD          &trans                            &trans   &mo 2   &reset                                           &bl BL_DEC
