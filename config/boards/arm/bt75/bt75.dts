@@ -25,11 +25,6 @@
 		zmk,battery = &vbatt;
 	};
 
-	sensors {
-		compatible = "zmk,keymap-sensors";
-		sensors = <&encoder_1>;
-	};
-
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <16>;
@@ -40,7 +35,7 @@
 		RC(2,0)   RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11) RC(2,12)  RC(2,13)    RC(2,15) RC(2,16) RC(2,17) RC(2,18) RC(2,19) RC(2,20) RC(2,21)
 		RC(3,0)     RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10) RC(3,11)         RC(3,13)                               RC(3,18) RC(3,19) RC(3,20)
 		RC(4,0)       RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) RC(4,10)  RC(4,11)              RC(4,12)             RC(4,16)          RC(4,18) RC(4,19) RC(4,20) RC(4,21)
-		RC(5,0)   RC(5,1)   RC(5,2)                      RC(5,6)                     RC(5,10)   RC(5,11)   RC(5,12)   RC(5,13)    RC(5,15) RC(5,16) RC(5,17) RC(5,18) RC(5,19) RC(5,20)
+		RC(5,0)   RC(5,1)   RC(5,2)                      RC(5,6)                     RC(5,10)   RC(5,11)   RC(5,12)   RC(5,13)    RC(5,15) RC(5,16) RC(5,17) RC(5,18)          RC(5,20)
 		>;
 	};
 
