@@ -5,6 +5,33 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+/ {
+    macros {
+        zoom_in: zoom_in {
+            label = "zoom_in";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp PLUS>
+                , <&macro_release &kp LGUI>
+				, <&macro_release &kp PLUS>
+                ;
+        };
+
+		zoom_out: zoom_out {
+            label = "zoom_out";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp MINUS>
+                , <&macro_release &kp LGUI>
+				, <&macro_release &kp MINUS>
+                ;
+        };
+    };
+};
 
 / {
 	keymap {
@@ -26,7 +53,7 @@
 				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &kp PG_DN
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp &zoom_in &zoom_out &inc_dec_kp PGUP PGDN>;
 		};
 		raise {
 			bindings = <
