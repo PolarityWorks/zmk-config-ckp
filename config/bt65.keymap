@@ -15,11 +15,11 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp PLUS>
                 , <&macro_release &kp LGUI>
-				, <&macro_release &kp PLUS>
+		, <&macro_release &kp PLUS>
                 ;
         };
 
-		zoom_out: zoom_out {
+	zoom_out: zoom_out {
             label = "zoom_out";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -27,7 +27,7 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp MINUS>
                 , <&macro_release &kp LGUI>
-				, <&macro_release &kp MINUS>
+		, <&macro_release &kp MINUS>
                 ;
         };
     };
@@ -53,7 +53,7 @@
 				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &kp PG_DN
 				&kp LCTRL &kp LALT &kp LGUI            &kp SPACE                          &kp RGUI  &mo 1 &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
 			>;
-			sensor-bindings = <&inc_dec_kp A B &inc_dec_kp F G &inc_dec_kp Y Z>;
+			sensor-bindings = <&inc_dec_kp F PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp zoom_out zoom_in>;
 		};
 		raise {
 			bindings = <
