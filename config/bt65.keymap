@@ -53,7 +53,7 @@
 				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &kp PG_DN
 				&kp LCTRL &kp LALT &kp LGUI            &kp SPACE                          &kp RGUI  &mo 1 &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
 			>;
-			sensor-bindings = <&inc_dec_kp F PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp zoom_out zoom_in>;
+			sensor-bindings = <&inc_dec_kp F PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
 		};
 		raise {
 			bindings = <
