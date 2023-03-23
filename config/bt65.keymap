@@ -20,7 +20,7 @@
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 
-				&kp CLCK &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
+				&kp TILDE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
 				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	&kp BSLH &kp INS
 				&kp ESC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT           	&kp RET &kp PG_UP
 				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &kp PG_DN
