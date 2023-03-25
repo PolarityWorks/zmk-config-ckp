@@ -37,7 +37,7 @@
 				&trans	&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6   &kp F7   &kp F8 &kp F9		&kp F10 	&kp F11 	&kp F12 	&trans		&trans  //15
 				&kp TILDE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6   &kp N7   &kp N8 &kp N9 	&kp N0		&kp MINUS	&trans 		&trans		&trans //15
 				&trans	&trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT	&trans 		&trans		&trans						&trans //14
-				&trans  &mo L_FUNC &mo L_EXTRA &trans &trans &trans &trans   &trans &mo L_EXTRA &mo L_FUNC 	&trans &trans			&trans	&trans // 14
+				&trans  &mo L_FUNC &mo L_EXTRA &mo L_MULTI &trans &trans &trans   &mo L_MULTI &mo L_EXTRA &mo L_FUNC 	&trans &trans			&trans	&trans // 14
 				&trans 	&trans &trans 				&kp LGUI                            	&trans		&trans   	&trans &trans &trans 			&trans // 10
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
