@@ -10,6 +10,8 @@
 #include <dt-bindings/led/led.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 
+#include "pinctrl.dtsi"
+
 / {
 	model = "BT60";
 	compatible = "polarityworks,bt60v2";
@@ -46,7 +48,6 @@
 
 	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
 		diode-direction = "col2row";
 
 		col-gpios
@@ -109,8 +110,7 @@
 		compatible = "pwm-leds";
 		label = "Backlight LEDs";
 		pwm_led_0 {
-			pwms = <&pwm0 17>;
-			label = "Backlight LED 0";
+			pwms = <&pwm0 0 10000 PWM_POLARITY_NORMAL>;
 		};
 	};
 
@@ -137,7 +137,9 @@
 
 &pwm0 {
 	status = "okay";
-	ch0-pin = <17>;
+	pinctrl-0 = <&pwm0_default>;
+	pinctrl-1 = <&pwm0_sleep>;
+	pinctrl-names = "default", "sleep";
 };
 
 &gpiote {
@@ -150,18 +152,6 @@
 
 &gpio1 {
 	status = "okay";
-};
-
-&i2c0 {
-	compatible = "nordic,nrf-twi";
-	sda-pin = <17>;
-	scl-pin = <20>;
-};
-
-&uart0 {
-	compatible = "nordic,nrf-uarte";
-	tx-pin = <6>;
-	rx-pin = <8>;
 };
 
 &usbd {
@@ -209,28 +199,27 @@
 	};
 };
 
-&spi1 {
+&spi3 {
 	compatible = "nordic,nrf-spim";
+	pinctrl-0 = <&spi3_default>;
+	pinctrl-1 = <&spi3_sleep>;
+	pinctrl-names = "default", "sleep";
 	status = "okay";
-	mosi-pin = <20>;
-	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <27>;
-	miso-pin = <8>;
+	rx-delay-supported;
+	rx-delay = < 0x2 >;
 
 	led_strip: ws2812@0 {
 	  compatible = "worldsemi,ws2812-spi";
 	  label = "WS2812";
 
-	  /* SPI */
-	  reg = <0>; /* ignored, but necessary for SPI bindings */
-	  spi-max-frequency = <4000000>;
+		/* SPI */
+		reg = <0>; /* ignored, but necessary for SPI bindings */
+		spi-max-frequency = <4000000>;
 
-	  /* WS2812 */
-	  chain-length = <10>; /* number of LEDs */
-	  spi-one-frame = <0x70>;
-	  spi-zero-frame = <0x40>;
-	  color-mapping = <LED_COLOR_ID_GREEN
-	                   LED_COLOR_ID_RED
-	                   LED_COLOR_ID_BLUE>;
+		/* WS2812 */
+		chain-length = <12>; /* LED strip length */
+		spi-one-frame = <0x70>;
+		spi-zero-frame = <0x40>;
+		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
 };
