@@ -7,8 +7,6 @@
 
 #define RAISE 1
 #define L_FUNC 2
-#define L_EXTRA 3
-#define L_MULTI 4
 
 
 / {
@@ -24,51 +22,31 @@
 				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU| LEFT |  DOWN    | RIGHT	|
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
-				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP 	&kp ESC
+				&kp TILDE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP 	&kp ESC
 				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	&kp BSLH 		&kp ESC
 				&kp ESC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT           	&kp RET				&kp ESC
 				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp ESC					&kp PG_DN
-				&kp LCTRL &kp LALT &mo RAISE             &kp SPACE                       &mo RAISE &kp RALT &kp RCTRL &kp RGUI &kp ESC 	&kp ESC
+				&kp LCTRL &kp LALT &mo RAISE             &kp SPACE                       &mo L_FUNC &kp RALT &kp RCTRL &kp RGUI &kp ESC 	&kp ESC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		raise {
 			bindings = <
-				&trans	&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6   &kp F7   &kp F8 &kp F9		&kp F10 	&kp F11 	&kp F12 	&trans		&trans  //15
-				&kp TILDE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6   &kp N7   &kp N8 &kp N9 	&kp N0		&kp MINUS	&trans 		&trans		&trans //15
-				&trans	&trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT	&trans 		&trans		&trans						&trans //14
-				&trans  &mo L_FUNC &mo L_EXTRA &mo L_MULTI &trans &trans &trans   &mo L_MULTI &mo L_EXTRA &mo L_FUNC 	&trans &trans			&trans	&trans // 14
-				&trans 	&trans &trans 				&kp LGUI                            	&trans		&trans   	&trans &trans &trans 			&trans // 10
+				&trans	&trans &trans &trans &trans  &trans  &trans  &trans   &trans &trans		 &trans 	       &trans 	       &trans 	&bl BL_TOG    &bootloader  //15
+				&trans  &kp F7 &kp F8 &kp F9 &kp F10 &trans &trans   &trans   &trans &trans 	 &trans					 &trans  &trans 		 &rgb_ug RGB_TOG		&sys_reset //15
+				&trans	&kp F4 &kp F5 &kp F6 &kp F11 &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans   													&bt BT_CLR 		&trans //14
+				&trans  &kp F1 &kp F2 &kp F3 &kp F12 &trans &trans   &trans   &trans &trans 	 &trans &trans	 													&bt BT_NXT		&trans // 14
+				&trans 	&trans &trans 				&kp LGUI                            	&trans		 &trans &trans   &trans 				 					&bt BT_PRV 	  &trans // 10
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		function_layer {
 			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans 	&trans &trans &trans &trans &trans &trans &trans							&trans
-				&trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6   &kp F7   &kp F8 &kp F9 		&kp F10		&kp F11	&kp F12 &trans				&trans
-				&trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans &trans 						&trans
-				&trans &trans &trans &trans &trans &trans &trans 	&trans &trans &trans &trans &trans &trans 									&trans
-				&trans &trans &trans 				&trans                            	&trans		&trans   	&trans &trans &trans 			&trans
-			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-		};
-		extra_layer {
-			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans 	&trans &trans &trans &trans &trans &trans &trans		&trans
-				&trans &trans &trans &trans &kp END &trans &kp HOME &kp PG_UP &trans &trans &trans &trans &trans &trans 		&trans
-				&trans &trans &trans &kp PG_DN &trans &trans &trans 	&trans &trans &trans &trans &trans &trans 				&trans
-				&trans &trans &trans &trans &trans &trans &trans 	&trans &trans &trans &trans &trans &trans 					&trans
-				&trans &trans &trans 				&trans                            	&trans		&trans   	&trans &trans &trans 			&trans
-			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-		};
-		multi_layer {
-			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 									 &bootloader	&trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 		&rgb_ug RGB_TOG &rgb_ug RGB_HUI  &rgb_ug RGB_HUD &reset 		&trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &bl BL_TOG  &bl BL_INC     &bl BL_DEC 						 &trans 		&trans
-				&trans &trans &trans &trans &trans &trans &trans &trans 	&bt BT_CLR 	  &bt BT_NXT     &bt BT_PRV 						&trans	 &trans &trans
-				&trans &trans &trans                     &trans							&kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP  &trans      &trans           &trans
+				&trans	&trans &trans &trans &trans  &trans  &trans  &trans   &trans &trans		 &trans 	       &trans 	       &trans 	&bl BL_TOG    &bootloader  //15
+				&trans  &kp N7 &kp N8 &kp N9 &trans &trans &trans   &trans   &trans &trans 	 &trans					 &trans  &trans 		 &rgb_ug RGB_TOG		&sys_reset //15
+				&trans	&kp N4 &kp N5 &kp N6 &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans   													&bt BT_CLR 		&trans //14
+				&trans  &kp N1 &kp N2 &kp N3 &trans &trans &trans   &trans   &trans &trans 	 &trans &trans	 													&bt BT_NXT		&trans // 14
+				&trans 	&trans &trans 				&kp LGUI                            	&trans		 &trans &trans   &trans 				 					&bt BT_PRV 	  &trans // 10
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
