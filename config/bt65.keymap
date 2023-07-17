@@ -40,3 +40,40 @@
 		};
 	};
 };
+
+
+/ {
+    macros {
+        accent_macro: accent_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp RALT>,
+                <&macro_tap &kp GRAVE>,
+                <&macro_release &kp RALT>,
+		<&macro_param_1to1>,
+		<&kp MACRO_PLACEHOLDER>;
+        };
+    };
+
+    behaviors {
+        accent_letter: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&accent_macro a>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &accent_letter
+            >;
+        };
+    };
+};
