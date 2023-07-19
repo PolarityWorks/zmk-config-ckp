@@ -52,7 +52,7 @@
                 <&macro_press &kp RALT>,
                 <&macro_tap &kp GRAVE>,
                 <&macro_release &kp RALT>,
-		<&macro_param_1to1>,
+		<&macro_param_1to2>,
 		<&macro_tap &kp MACRO_PLACEHOLDER>;
         };
     };
@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
             bindings = <&kp A>, <&accent_macro A>;
         };
     };
