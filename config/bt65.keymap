@@ -63,7 +63,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp a>, <&accent_macro a>;
+            bindings = <&kp A>, <&accent_macro A>;
         };
     };
 };
