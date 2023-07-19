@@ -20,9 +20,9 @@
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 
-				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp GRAVE
+				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &accent_letter
 				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	&kp BSLH &kp INS
-				&kp CLCK  &accent_letter_a  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT           	&kp RET &kp PG_UP
+				&kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT           	&kp RET &kp PG_UP
 				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &kp PG_DN
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
 			>;
@@ -45,25 +45,23 @@
 / {
     macros {
         accent_macro: accent_macro {
-            compatible = "zmk,behavior-macro-one-param";
-            label = "new_macro";
-            #binding-cells = <1>;
+            compatible = "zmk,behavior-macro";
+            label = "accent_macro";
+            #binding-cells = <0>;
             bindings =
                 <&macro_press &kp RALT>,
                 <&macro_tap &kp GRAVE>,
-                <&macro_release &kp RALT>,
-		<&macro_param_1to1>,
-		<&macro_tap &kp MACRO_PLACEHOLDER>;
+                <&macro_release &kp RALT>;
         };
     };
 
     behaviors {
-        accent_letter_a: accent_letter_a {
+        accent_letter: accent_letter {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&kp A>, <&accent_macro A>;
+            bindings = <&kp GRAVE>, <&accent_macro>;
         };
     };
 };
