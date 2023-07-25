@@ -12,11 +12,11 @@
 
 		default_layer {
 				// ------------------------------------------------------------------------------------------------------------
-				// |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | INS		|
+				// |  ESC  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | GRAVE		|
 				// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \    | DEL		|
 				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |PGUP	|
 				// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |   SHIFT  | UP   | PGDN|
-				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU| LEFT |  DOWN    | RIGHT	|
+				// |  CTL  |  WIN  |  ALT GR |            SPACE               | ALT | FN    |  MENU| LEFT |  DOWN    | RIGHT	|
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 
@@ -31,10 +31,10 @@
 		raise {
 			bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
-				&trans &trans &kp UP &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK &sys_reset &rgb_ug RGB_HUI
-				&trans    &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_UP   &bootloader &rgb_ug RGB_HUD
+				&trans &trans &kp UP &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK &sys_reset &out OUT_TOG
+				&trans    &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_UP   &bootloader &trans
 				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
-				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &trans &bl BL_DEC
+				&bt BT_SEL 0 &bt BT_SEL 1  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &trans &bl BL_DEC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
