@@ -1,0 +1,8 @@
+# BT65 board configuration
+
+# Copyright (c) 2021 Polarity Works
+# SPDX-License-Identifier: MIT
+
+config BOARD_BT65
+	bool "bt65"
+	depends on SOC_NRF52840_QIAA
