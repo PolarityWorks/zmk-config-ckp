@@ -45,7 +45,7 @@
         raise {
             bindings = <
 &kp GRAVE  &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &kp K_NEXT  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp F9  &kp F10  &kp F11  &kp F12      &trans             &kp C_SLEEP_MODE
-&trans     &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans   &trans   &trans       &sys_reset         &kp END
+&trans     &Genshin_Q        &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans   &trans   &trans       &sys_reset         &kp END
 &trans     &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &LOL_Q  &trans   &trans   &bootloader  &kp C_VOLUME_DOWN
 &mo 2      &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans   &mo 2    &trans       &kp C_VOLUME_UP
            &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans
