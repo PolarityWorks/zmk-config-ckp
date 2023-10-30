@@ -4,6 +4,21 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        LOL_Q: LOL_Q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp Q &kp M &kp N8 &kp N2 &kp TAB &kp LS(F) &kp LS(H) &kp N3 &kp F &kp LS(G) &kp N4 &kp N4 &kp N5 &kp F &kp Z &kp Z &kp LS(S) &kp LS(U) &kp LS(Y) &kp N9>;
+            label = "LOL_Q";
+        };
+        Genshin_Q: Genshin_Q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U &kp A &kp N &kp T &kp K &kp N2 &kp N7 &kp N7 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp TAB &kp LS(Q) &kp U &kp A &kp N &kp N1 &kp N2 &kp N3 &kp N4 &kp N5>;
+            label = "GENSHIN_Q";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -31,7 +46,7 @@
             bindings = <
 &kp GRAVE  &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &kp K_NEXT  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp F9  &kp F10  &kp F11  &kp F12      &trans             &kp C_SLEEP_MODE
 &trans     &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans   &trans   &trans       &sys_reset         &kp END
-&trans     &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans   &trans   &bootloader  &kp C_VOLUME_DOWN
+&trans     &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &LOL_Q  &trans   &trans   &bootloader  &kp C_VOLUME_DOWN
 &mo 2      &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans   &mo 2    &trans       &kp C_VOLUME_UP
            &trans            &trans          &trans      &trans      &trans             &trans           &trans                &trans                &trans  &trans
             >;
