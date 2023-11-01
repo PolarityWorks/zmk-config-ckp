@@ -26,7 +26,7 @@
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
-		sensors = <&encoder_1>;
+		sensors = <&encoder_2>;
 	};
 
 	default_transform: keymap_transform_0 {
