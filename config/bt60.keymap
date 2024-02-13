@@ -37,7 +37,7 @@
 			bindings = <
 				&bt BT_CLR      &kp F1          &kp F2       &kp F3     &kp F4     &kp F5     &kp F6   &kp F7         &kp F8   &kp F9     &kp F10   &kp F11   &kp F12         &kp DEL
 				&trans          &trans          &kp C_EJECT  &kp EQUAL  &trans     &kp TILDE  &trans   &kp UNDERSCORE &kp INS  &kp EQUAL &kp PIPE  &kp SLCK  &kp PAUSE_BREAK &rgb_ug RGB_TOG
-				&kp CAPS        &trans          &trans       &trans     &trans     &kp GRAVE  &kp LEFT &kp DOWN       &kp UP   &kp RIGHT  &trans    &kp PG_UP                 PRINTSCREEN
+				&kp CAPS        &trans          &trans       &trans     &trans     &kp GRAVE  &kp LEFT &kp DOWN       &kp UP   &kp RIGHT  &trans    &kp PG_UP                 &trans
 				&kp C_PREV      &kp PIPE        &kp C_VOL_UP &kp C_MUTE &bl BL_INC &bl BL_DEC &trans   &kp MINUS      &kp HOME &kp END    &kp PG_DN                           &bl BL_INC
 				&rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_HUD          &trans                            &trans   &mo 2   &reset                                           &bl BL_DEC
 			>;
