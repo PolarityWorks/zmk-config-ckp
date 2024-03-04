@@ -45,6 +45,7 @@
 		RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) RC(4,10)  RC(4,11)      RC(4,12) RC(4,13)	RC(4,14)		 RC(4,15)
 		RC(5,0)   RC(5,1)   RC(5,2)                      RC(5,6)                     RC(5,10)   RC(5,11)    RC(5,12)     RC(5,13)	 RC(5,14)		 RC(5,15)
 		>;
+		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 	};
 
 
