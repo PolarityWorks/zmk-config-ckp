@@ -16,15 +16,87 @@
 			low-power-enable;
 		};
 	};
+
 	pwm0_default: pwm0_default {
 		group1 {
 			psels = <NRF_PSEL(PWM_OUT0, 0, 17)>;
 		};
 	};
+
 	pwm0_sleep: pwm0_sleep {
 		group1 {
 			psels = <NRF_PSEL(PWM_OUT0, 0, 17)>;
 			low-power-enable;
 		};
+	};
+
+	/* --- Matrix row phandles (referenced from bt75.dts row-gpios) --- */
+	row0: row0 {
+		gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+	row1: row1 {
+		gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+	row2: row2 {
+		gpios = <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+	row3: row3 {
+		gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+	row4: row4 {
+		gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+	row5: row5 {
+		gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+
+	/* --- Matrix column phandles (referenced from bt75.dts col-gpios) --- */
+	col0: col0 {
+		gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>;
+	};
+	col1: col1 {
+		gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;
+	};
+	col2: col2 {
+		gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
+	};
+	col3: col3 {
+		gpios = <&gpio1 15 GPIO_ACTIVE_HIGH>;
+	};
+	col4: col4 {
+		gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
+	};
+	col5: col5 {
+		gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+	};
+	col6: col6 {
+		gpios = <&gpio0 28 GPIO_ACTIVE_HIGH>;
+	};
+	col7: col7 {
+		gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
+	};
+	col8: col8 {
+		gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>;
+	};
+	col9: col9 {
+		gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+	};
+	col10: col10 {
+		gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;
+	};
+	col11: col11 {
+		gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+	};
+	col12: col12 {
+		gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
+	};
+	col13: col13 {
+		gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+	};
+	col14: col14 {
+		gpios = <&gpio0 23 GPIO_ACTIVE_HIGH>;
+	};
+	col15: col15 {
+		gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
 	};
 };
