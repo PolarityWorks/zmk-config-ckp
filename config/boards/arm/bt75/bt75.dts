@@ -1,4 +1,4 @@
-*
+/*
  * Copyright (c) 2021 Polarity Works
  *
  * SPDX-License-Identifier: MIT
@@ -206,4 +206,3 @@
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
 };
-
