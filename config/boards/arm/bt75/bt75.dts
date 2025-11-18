@@ -94,15 +94,14 @@
 			, <&gpio1 6 GPIO_ACTIVE_HIGH>
 			;
 
-		row-gpios
-			= <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, &gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)
-			, <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			;
-	};
+        row-gpios
+            = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
 
 	ext-power {
 		compatible = "zmk,ext-power-generic";
